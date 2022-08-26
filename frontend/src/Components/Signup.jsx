@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-
+import "./Signup.css"
 import { useNavigate } from 'react-router-dom';
 const Signup = () => {
     const [username,setUser] = useState('')
@@ -37,12 +37,18 @@ const Signup = () => {
         }
        
     }
-    return <div style={{marginLeft:"500px",marginTop:"100px",padding:"20px",width:"400px"}}>
-        
-        <h1>Sigup </h1>
+    return  <div className="outer">
+    <div style={{padding:"20px"}}>
+    <div className="logo">
+            <img src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png"/>
+          </div>
+          <div className="userform">
+        <h1 style={{color:"gray"}}>Sigup </h1>
         <input style={{marginBottom:"20px"}} type="text" placeholder="username" value={username} onChange={handleuserChange}></input><br></br>
         <input style={{marginBottom:"20px"}} type="text" placeholder="password" value={password} onChange={handlePasswordChange}></input><br />
-        <button onClick={handleSubmit}>Signup</button>
+        <button onClick={handleSubmit} className="loginbtn">Signup</button>
+        </div>
+    </div>
     </div>
 }
 

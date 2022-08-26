@@ -3,9 +3,9 @@
     width: 250px;
     text-align: center;
     margin-top: 8%;
-    margin-left:40%;
-    padding-bottom: 20px;
-    background-color: #ffffff;
+    height: 400px;
+    padding-bottom: 20px; 
+    background-color: #e7eeea;
 
 }
 
@@ -20,6 +20,4 @@
    
 
 }
-.userform{
-     margin-top: 8%;
-}
+
