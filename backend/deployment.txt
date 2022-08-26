@@ -1,0 +1,50 @@
+1 - make sure the filename is index.js only
+
+2 - "start" script in package.json, with value as "node index.js"
+
+3 - heroku - creating account
+
+4 - having heroku cli
+
+5- git init
+
+6 - create .gitignore - env, node_modules/
+
+7 - git add .
+
+8 - check with git status to ensure .env and node_modules is not added
+
+9 - git commit
+
+10 - heroku login - in terminal - login on browser and come back
+
+11 - heroku create
+
+12 - git push heroku master
+
+13 - add env
+
+dashboard heroku;
+settings
+config vars
+add key value pairs
+restart all dynos
+14 - mongodb atlas IP is whitelisted for everyone
+
+//after updates
+
+git add .
+
+git commit
+
+git push heroku master
+
+restart the app in dashboard
+
+//MERN - 3 hours
+
+// have a react app installed
+
+// backend - heroku
+
+// frontend - don't worry about CSS/UI - netlify

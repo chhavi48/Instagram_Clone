@@ -1,0 +1,25 @@
+.outer{
+    border: 1px solid gray;
+    width: 250px;
+    text-align: center;
+    margin-top: 8%;
+    margin-left:40%;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+
+}
+
+
+.loginbtn{
+    background-color: #0095f6;
+    border-radius: 5px;
+    color: white;
+    width: 200px;
+    border-style: none;
+    text-align: center;
+   
+
+}
+.userform{
+     margin-top: 8%;
+}
