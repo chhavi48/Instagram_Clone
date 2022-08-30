@@ -8,9 +8,9 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import SendIcon from '@mui/icons-material/Send';
 const Post = () => {
-    const [data,setdata]=useState({});
+    // const [data,setdata]=useState({});
     const [feeds,setFeeds]=useState([])
- const inputfile=useRef();
+//  const inputfile=useRef();
 
  useEffect(()=>{
   const userId=localStorage.getItem("userid")
@@ -24,34 +24,34 @@ const Post = () => {
 //  const nav=useNavigate;
 // const [name,value]= useContext(GlobalContext)
 // const [name, value] = useContext(GlobalContext);
- const handleChange=(e)=>{
-  const {name,value}= e.target;
-  setdata({
-    ...data,
-    [name]:value,
-  })
- }
+//  const handleChange=(e)=>{
+//   const {name,value}= e.target;
+//   setdata({
+//     ...data,
+//     [name]:value,
+//   })
+//  }
 
-  const handleSubmit=(e)=>{
-    e.preventDefault();
-    // const {name,value}=e.target;
+//   const handleSubmit=(e)=>{
+//     e.preventDefault();
+//     // const {name,value}=e.target;
 
 
-    const formdata=new FormData();
-    formdata.append("title",data.title)
-    formdata.append("description",data.description)
-    formdata.append("tags",data.tags)
-    formdata.append("image",inputfile.current.files[0]);
-     const userId=localStorage.getItem("userid")
+//     const formdata=new FormData();
+//     formdata.append("title",data.title)
+//     formdata.append("description",data.description)
+//     formdata.append("tags",data.tags)
+//     formdata.append("image",inputfile.current.files[0]);
+//      const userId=localStorage.getItem("userid")
     
-    axios.post(`http://localhost:8000/profile/${userId}/feed`,formdata,{
-      headers:{"Content-Type":"multipart/form-data"},
+//     axios.post(`http://localhost:8000/profile/${userId}/feed`,formdata,{
+//       headers:{"Content-Type":"multipart/form-data"},
       
-    })
-}
+//     })
+// }
   return (
     <div>
-  <div className='postform'>
+  {/* <div className='postform'>
     <h4 style={{marginLeft:"40%"}}>Post Form</h4>
 
      <form onSubmit={handleSubmit} className="setform">
@@ -63,7 +63,7 @@ const Post = () => {
      </form>
      </div>
 
-  
+   */}
   
  
  

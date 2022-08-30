@@ -5,16 +5,18 @@ import App from './App';
 
 import { BrowserRouter } from 'react-router-dom'
 // import './index.css'
+import { ChakraProvider } from '@chakra-ui/react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+
   
 
     <BrowserRouter>
-    <App />
+    <ChakraProvider>
+      <App />
+    </ChakraProvider>
     </BrowserRouter>
     
-  
-  </React.StrictMode>
+
 )

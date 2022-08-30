@@ -17,7 +17,7 @@ const Feed = () => {
      <div className="feed">
        <StoryReel/>
      </div>
-     <Sidebar/>
+     {/* <Sidebar/> */}
       <Post/>
 
     </div>
