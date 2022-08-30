@@ -1,12 +1,14 @@
 import React, { useContext, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import style from "./Post.css"
+import "./Post.css"
 import axios from 'axios'
 import { useState,useRef } from 'react'
-import { Avatar } from '@mui/material'
+
+import { Avatar} from "@chakra-ui/react";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import SendIcon from '@mui/icons-material/Send';
+
 const Post = () => {
     // const [data,setdata]=useState({});
     const [feeds,setFeeds]=useState([])
@@ -70,7 +72,14 @@ const Post = () => {
   {feeds.map(f=> <div className="feed_display">
 
          <div className="first">
-          <Avatar src="https://pbs.twimg.com/profile_images/1534381051732459520/UXLbk1u4_400x400.jpg" style={{marginLeft:"3%",border:"px solid gray"}}/>
+          <Avatar
+           border={"1px solid"}
+           borderColor={"#d8d8d8"}
+           m={2}
+           
+           src="https://media-exp1.licdn.com/dms/image/C4D03AQFR333TJ9KRnQ/profile-displayphoto-shrink_200_200/0/1654062582833?e=2147483647&v=beta&t=61We4wnMtGKsK_D5qCRf1r6bc2WU-r5CvqXOSbEGtIE"/>
+          
+          {/* <Avatar src="https://pbs.twimg.com/profile_images/1534381051732459520/UXLbk1u4_400x400.jpg"/> */}
          <p style={{marginLeft:"2%"}}>{f.title}<br/>
       {f.description}</p>
          </div>
