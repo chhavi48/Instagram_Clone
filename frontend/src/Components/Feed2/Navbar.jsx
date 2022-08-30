@@ -28,12 +28,15 @@ import {
   FormLabel
 } from "@chakra-ui/react";
 
-import { AiFillHome } from "react-icons/ai";
+import { AiFillHome,AiOutlineSetting } from "react-icons/ai";
 import { RiMessengerLine } from "react-icons/ri";
-import { VscDiffAdded } from "react-icons/vsc";
+import { VscDiffAdded,VscReport } from "react-icons/vsc";
 import { ImCompass2 } from "react-icons/im";
 import { FiHeart } from "react-icons/fi";
 import { BiSearch } from "react-icons/bi";
+import { HiSwitchHorizontal } from "react-icons/hi";
+import { CgProfile } from "react-icons/cg";
+import { BsBookmark } from "react-icons/bs";
 
 export default function Navbar() {
 
@@ -140,13 +143,13 @@ export default function Navbar() {
                 />
               </MenuButton>
               <MenuList>
-                <MenuItem>Profile</MenuItem>
-                <MenuItem>Saved</MenuItem>
-                <MenuItem>Settings</MenuItem>
-                <MenuItem>Report a problem</MenuItem>
-                <MenuItem>Switch Accounts</MenuItem>
+                <MenuItem icon={<CgProfile size={20}/>}> Profile</MenuItem>
+                <MenuItem icon={<BsBookmark size={20}/>}>Saved</MenuItem>
+                <MenuItem icon={<AiOutlineSetting size={20}/>}>Settings</MenuItem>
+                <MenuItem icon={<VscReport size={20}/>}>Report a problem</MenuItem>
+                <MenuItem icon={<HiSwitchHorizontal size={20}/>}>Switch Accounts</MenuItem>
                 <MenuDivider />
-                <MenuItem>Log Out</MenuItem>
+                <MenuItem >Log Out</MenuItem>
               </MenuList>
             </Menu>
           </Flex>
