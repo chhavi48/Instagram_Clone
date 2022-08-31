@@ -25,7 +25,7 @@ export default function LogIn2() {
   const nav = useNavigate();
 
   const handleChange = (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     const { value, name } = e.target;
     setformDate({
       ...formData,
@@ -45,12 +45,13 @@ export default function LogIn2() {
       localStorage.setItem("userid", user["_id"]);
       // console.log(data[0]);
       nav("/feed");
-    } catch (err) {
-      if (err.response.status === 401) {
-        alert("invaild user ");
+    } 
+    catch(err){
+      if(err.response.status===401){
+         alert("invaild user ")
       }
-    }
-  };
+}
+  }
 
   return (
     <Flex
@@ -71,7 +72,7 @@ export default function LogIn2() {
                 fontSize={"md"}
                 name="username"
                 onChange={handleChange}
-                type="email"
+                type="text"
                 placeholder="Phone number,Username, or email"
               />
             </FormControl>
@@ -80,7 +81,7 @@ export default function LogIn2() {
                 <Input
                   name="password"
                   onChange={handleChange}
-                  placeholder="Password"
+                  placeholder="text"
                   type={showPassword ? "text" : "password"}
                 />
                 <InputRightElement h={"full"}>

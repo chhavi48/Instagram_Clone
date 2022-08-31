@@ -38,7 +38,7 @@ import { BiSearch } from "react-icons/bi";
 import { HiSwitchHorizontal } from "react-icons/hi";
 import { CgProfile } from "react-icons/cg";
 import { BsBookmark } from "react-icons/bs";
-
+import { Link as RLink } from "react-router-dom";
 
 export default function Navbar() {
 
@@ -151,7 +151,7 @@ export default function Navbar() {
                 <MenuItem icon={<VscReport size={20}/>}>Report a problem</MenuItem>
                 <MenuItem icon={<HiSwitchHorizontal size={20}/>}>Switch Accounts</MenuItem>
                 <MenuDivider />
-                <MenuItem >Log Out</MenuItem>
+              <RLink to="/logout"><MenuItem >Log Out</MenuItem></RLink>
               </MenuList>
             </Menu>
           </Flex>
