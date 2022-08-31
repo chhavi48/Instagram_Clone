@@ -192,7 +192,7 @@ export default function Navbar() {
           </ModalBody>
 
           <ModalFooter>
-            <Button type={"submit"} value={"new post"} colorScheme='blue' mr={3}>
+            <Button onClick={onClose} type={"submit"} value={"new post"} colorScheme='blue' mr={3}>
               Share
             </Button>
             <Button onClick={onClose}>Cancel</Button>
