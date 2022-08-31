@@ -39,6 +39,7 @@ import { HiSwitchHorizontal } from "react-icons/hi";
 import { CgProfile } from "react-icons/cg";
 import { BsBookmark } from "react-icons/bs";
 
+
 export default function Navbar() {
 
     const { isOpen, onOpen, onClose } = useDisclosure()
