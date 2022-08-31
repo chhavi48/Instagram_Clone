@@ -6,18 +6,20 @@ import Login from "./Components/Login"
 import Feed2 from "./Components/Feed2/Feed2"
 import SignUp2 from "./Components/Feed2/SignUp2"
 import LogIn2 from "./Components/Feed2/Login2"
+import Sidebar from "./Components/Feed2/Sidebar"
+
 function App() {
  
 
   return (
     <div>
-<Routes>
+{/* <Routes>
       <Route path="/signup" element={<SignUp2/>}/>
       <Route path="/feed" element={<Feed2/>}/>
         <Route path="/" element={<Login/>}/>
           
-      </Routes> 
-{/* <Feed2/> */}
+      </Routes>  */}
+<Feed2/>
     </div>
   )
 }
