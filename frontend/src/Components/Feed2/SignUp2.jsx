@@ -101,7 +101,7 @@ export default function SignUp2() {
               </Button>
             </Stack>
               <hr />
-            <Box pt={4}>
+            {/* <Box pt={4}>
               <FormControl id="firstName" isRequired>
                 <Input type="text" placeholder="Mobile Number or Email" />
               </FormControl>
@@ -110,7 +110,7 @@ export default function SignUp2() {
               <FormControl id="lastName">
                 <Input type="text" placeholder="Full Name" />
               </FormControl>
-            </Box>
+            </Box> */}
 
             <FormControl id="email" isRequired>
               <Input
