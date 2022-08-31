@@ -38,22 +38,28 @@ useEffect(()=>{
    },[])
    
   return (
-    <>
+    <Stack gap={3} w="30rem" m={3}>
     {feeds.map(f=>
          <Stack border={"1px solid"} rounded={8} borderColor={"gray.300"}>
          <Flex justifyContent={"space-between"} p={4}>
            <Flex gap={4}>
-             <Avatar src="" />
+             <Avatar src="https://pbs.twimg.com/profile_images/1534381051732459520/UXLbk1u4_400x400.jpg" />
              <Text fontWeight={"semibold"} mt={2} align={"center"}>
-               Username
+                   {f.title}<br/>
+                   {f.description}
+                   
+
              </Text>
+            
            </Flex>
+
            <BsThreeDots />
          </Flex>
+      
          <Box>
            <Image
              w={"500px"}
-             src="https://ph-files.imgix.net/bc943834-404b-4975-86f3-1b8705aefece.png?auto=format&auto=compress&codec=mozjpeg&cs=strip&fit=max&dpr=1"
+             src={`http://localhost:8000/static/${f.image}`}
            />
          </Box>
          <Flex justifyContent={"space-between"} p={4}>
@@ -63,12 +69,14 @@ useEffect(()=>{
              
              <ChatBubbleOutlineIcon />
              <SendIcon />
+            
            </Flex>
            <BsBookmark />
          </Flex>
+         <span style={{color:"blue"}}>{f.tags}</span>
        </Stack> )}
     
-    </>
+    </Stack>
   );
 };
 

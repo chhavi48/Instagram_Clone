@@ -11,9 +11,11 @@ const Feed2 = () => {
 
       <StoryReel />
       <Flex justifyContent={'space-around'}>
+    
         <Post2/>
-        <Sidebar m={8}/>
+       
       </Flex>
+      <Sidebar ml={8}/>
     </div>
   );
 };
