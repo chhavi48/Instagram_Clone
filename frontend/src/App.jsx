@@ -12,13 +12,13 @@ function App() {
   return (
     <div>
     
-       <Routes>
+       {/* <Routes>
       <Route path="/signup" element={<SignUp2/>}/>
       <Route path="/feed" element={<Feed2/>}/>
         <Route path="/" element={<LogIn2/>}/>
         
-      </Routes> 
-{/* <LogIn2/> */}
+      </Routes>  */}
+<Feed2/>
     </div>
   )
 }
