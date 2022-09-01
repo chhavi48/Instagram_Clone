@@ -9,18 +9,16 @@ app.use(express.urlencoded({extended:true}))
 
 app.use(express.json())
 app.use(cors({
-  origin:[""]
+  
 }))
 app.use("/static",(express.static("./uploads")))
 app.use("/auth",authRouter)
 app.use("/profile",userRouter)
 
-app.get("/",(req,res)=>{
-     res.send("just check")
-})
-const PORT=process.env.PORT || 8000
 
-app.listen(PORT,async()=>{
+// const PORT=process.env.PORT || 8000
+
+app.listen(8000,async()=>{
     await connection;
     console.log("connected to db")
     console.log(" server is runnig http://localhost:8000")

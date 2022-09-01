@@ -82,7 +82,7 @@ const StoryReel = () => {
           </Box>
         <Box>
           <Avatar
-            src="https://avatars.githubusercontent.com/u/94439105?v=4"
+            src="https://images.pexels.com/photos/5473957/pexels-photo-5473957.jpeg?auto=compress&cs=tinysrgb&w=600"
             size={"lg"}
             border={"3px solid"}
             borderRightColor={"orange.500"}
