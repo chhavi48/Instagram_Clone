@@ -15,7 +15,12 @@ app.use("/static",(express.static("./uploads")))
 app.use("/auth",authRouter)
 app.use("/profile",userRouter)
 
-app.listen(8000,async()=>{
+app.get("/",(req,res)=>{
+     res.send("just check")
+})
+const PORT=process.env.PORT || 8080
+
+app.listen(PORT,async()=>{
     await connection;
     console.log("connected to db")
     console.log(" server is runnig http://localhost:8000")
