@@ -38,7 +38,7 @@ useEffect(()=>{
    },[])
    
   return (
-    <Stack gap={3} w="30rem" m={3}>
+    <Stack gap={3} w="40rem" m={3}>
     {feeds.map(f=>
          <Stack border={"1px solid"} rounded={8} borderColor={"gray.300"}>
          <Flex justifyContent={"space-between"} p={4}>
@@ -58,7 +58,7 @@ useEffect(()=>{
       
          <Box>
            <Image
-             w={"500px"}
+             w={"40rem"}
              src={`http://localhost:8000/static/${f.image}`}
            />
          </Box>

@@ -101,11 +101,11 @@ export default function Navbar() {
           </HStack>
 
           <Flex alignItems={"center"} justifyContent={"space-between"} gap={6}>
-            <IconButton
+            <RLink to="/feed"><IconButton
               bgColor={"white"}
               _hover={"white"}
               icon={<AiFillHome size={"2rem"} />}
-            />
+            /></RLink>
             <IconButton
               bgColor={"white"}
               _hover={"white"}

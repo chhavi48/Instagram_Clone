@@ -4,7 +4,7 @@ import React from 'react'
  const Sidebar = () => {
   return (
     <Stack >
-        <Stack gap={2} border={'1px solid '} rounded={8} p={4} borderColor={'gray.300'} w={'20rem'}>
+        <Stack gap={2} border={'1px solid '} rounded={8} p={4} borderColor={'gray.300'} w={'20rem' } mt={10}>
         <Flex justifyContent={'space-between'}>
                 <Avatar src='https://pbs.twimg.com/profile_images/1534381051732459520/UXLbk1u4_400x400.jpg'/>
                 <Stack>

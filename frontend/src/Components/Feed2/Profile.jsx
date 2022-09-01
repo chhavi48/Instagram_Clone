@@ -7,8 +7,7 @@ import {
   Container,
   IconButton,
   Stack,
-  Center,
-  Spacer,
+ Image,
   SimpleGrid,
 } from "@chakra-ui/react";
 import axios from 'axios'
@@ -46,7 +45,7 @@ useEffect(()=>{
             <Flex justifyContent={"sapce-betweeen"} gap={4}>
               <Text fontSize={"2xl"} fontWeight={"hairline"}>
                 {" "}
-                Username
+                chhavi_srivastvav
               </Text>
               <Button bg={"none"} border={"1px solid"} size={"sm"}>
                 Edit Profile
@@ -54,15 +53,15 @@ useEffect(()=>{
               <IconButton bg={"none"} icon={<AiOutlineSetting />} />
             </Flex>
             <Flex justifyContent={"sapce-between"} gap={4}>
-              <Text>111 posts</Text>
+              <Text>{feeds.length} posts</Text>
               <Text>11M followers</Text>
               <Text>1 following</Text>
             </Flex>
             <Stack>
-                <Text fontWeight={'semibold'}>Full Name</Text>
-                <Text>Bio</Text>
-                <Text>Status</Text>
-                <Text color={'blue.400'}>Links</Text>
+                <Text fontWeight={'semibold'}>Chhavi srivastva</Text>
+                <Text>Full-stack web developer</Text>
+                <Text>single</Text>
+                <Text color={'blue.400'}><a href="https://chhavi-srivastav-portfolio-cs.vercel.app/">Portfolio</a></Text>
             </Stack>
           </Box>
         </Flex>
@@ -110,10 +109,7 @@ useEffect(()=>{
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXcVsav21DEpIgasZB3Tr2yYPEYGEsrfsHf9zjKcyiIkTBbb4HBsAW4nlp3K7eys3P6RM&usqp=CAU"
           size={"lg"}
           border={"3px solid gray"}
-        //   borderRightColor={"orange.500"}
-        //   borderLeftColor={"pink.400"}
-        //   borderTopColor={"pink.500"}
-        //   borderBottomColor={"orange.400"}
+  
           />
           <Text fontSize={'sm'}> College</Text>
           </Box>
@@ -170,41 +166,18 @@ useEffect(()=>{
     </Flex>
 <SimpleGrid columns={3} spacing={[2,4,8]}>
 {feeds.map(f=>
-         <Stack border={"1px solid"} rounded={8} borderColor={"gray.300"}>
-         <Flex justifyContent={"space-between"} p={4}>
-           <Flex gap={4}>
-             <Avatar src="https://pbs.twimg.com/profile_images/1534381051732459520/UXLbk1u4_400x400.jpg" />
-             <Text fontWeight={"semibold"} mt={2} align={"center"}>
-                   {f.title}<br/>
-                   {f.description}
-                   
-
-             </Text>
-            
-           </Flex>
-
-           <BsThreeDots />
-         </Flex>
+        
       
          <Box>
            <Image
-             w={"500px"}
+             w={"250px"}
+             h={"250px"}
              src={`http://localhost:8000/static/${f.image}`}
            />
          </Box>
-         <Flex justifyContent={"space-between"} p={4}>
-           <Flex gap={4}>
-             
-               <FavoriteBorderIcon />
-             
-             <ChatBubbleOutlineIcon />
-             <SendIcon />
-            
-           </Flex>
-           <BsBookmark />
-         </Flex>
-         <span style={{color:"blue"}}>{f.tags}</span>
-       </Stack> )}
+         
+      
+       )}
 </SimpleGrid>
     </Box>
     </>
