@@ -3,7 +3,7 @@ import React from 'react'
 
  const Sidebar = () => {
   return (
-    <Stack ml={1200} mt={"-44.2rem"}>
+    <Stack >
         <Stack gap={2} border={'1px solid '} rounded={8} p={4} borderColor={'gray.300'} w={'20rem'}>
         <Flex justifyContent={'space-between'}>
                 <Avatar src='https://pbs.twimg.com/profile_images/1534381051732459520/UXLbk1u4_400x400.jpg'/>

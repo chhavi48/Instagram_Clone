@@ -10,12 +10,12 @@ const Feed2 = () => {
       <Navbar />
 
       <StoryReel />
-      <Flex justifyContent={'space-around'}>
-    
-        <Post2/>
-       
+      
+      <Flex justifyContent={"space-around"}>
+        <Post2 />
+
+        <Sidebar ml={8} />
       </Flex>
-      <Sidebar ml={8}/>
     </div>
   );
 };

@@ -145,7 +145,9 @@ export default function Navbar() {
                 />
               </MenuButton>
               <MenuList>
+                <RLink to="/profile">
                 <MenuItem icon={<CgProfile size={20}/>}> Profile</MenuItem>
+                </RLink>
                 <MenuItem icon={<BsBookmark size={20}/>}>Saved</MenuItem>
                 <MenuItem icon={<AiOutlineSetting size={20}/>}>Settings</MenuItem>
                 <MenuItem icon={<VscReport size={20}/>}>Report a problem</MenuItem>
