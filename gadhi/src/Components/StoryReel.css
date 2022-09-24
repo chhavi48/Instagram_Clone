@@ -1,0 +1,20 @@
+.profilepic
+{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+ 
+ border: 2px solid gray;
+    /* border: 2px solid linear-gradient(red,yellow green); */
+}
+.profile{
+
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+.storyreel{
+   display: flex;
+   padding: 0 10px;
+   justify-content: space-between;
+    border: 1px solid gray;
+    margin-top: 4%;
+}

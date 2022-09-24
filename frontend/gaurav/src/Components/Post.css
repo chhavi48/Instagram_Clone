@@ -1,0 +1,35 @@
+.postform{
+    margin-left: 25%;
+    width: 500px;
+    border: 1px solid gray;
+    margin-top: -29%;
+    /* justify-content: space-around; */
+}
+.setform{
+    padding: 5px 5px;
+    
+}
+.feed_display{
+    margin-left: 25%;
+    width: 500px;
+    border: 1px solid gray;
+    margin-top: 2%;
+    
+     
+}
+.first{
+    display: flex;
+    border: 1px solid gray;
+   padding: 5px 0px;
+
+}
+.icons{
+    justify-content: space-around;
+}
+.icons:hover{
+    color: blue;
+}
+.tags{
+    color: rgb(78, 78, 234);
+    margin-left:10%;
+}

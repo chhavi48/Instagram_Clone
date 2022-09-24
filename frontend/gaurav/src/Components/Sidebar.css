@@ -1,0 +1,31 @@
+.sidebar{
+    width: 400px;
+     /* border: 1px solid black; */
+     height: 600px;
+     margin-left: 60%;
+     margin-top: -6%;
+    
+}
+.imgprofile{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+/* .username{
+    width: 100px;
+} */
+.side{
+margin-top: 5px;
+display: flex;
+justify-content: space-evenly;
+
+}
+.switch{
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.suggest{
+    display: flex;
+    justify-content: space-evenly; 
+}
