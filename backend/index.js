@@ -4,7 +4,7 @@ const userRouter=require("./routes/user")
 const connection=require("./storage/db")
 const cors=require("cors")
 const app=express()
-
+require("dotenv").config()
 app.use(express.urlencoded({extended:true}))
 
 app.use(express.json())
@@ -18,8 +18,8 @@ app.use("/profile",userRouter)
 
 // const PORT=process.env.PORT || 8000
 
-app.listen(8000,async()=>{
+app.listen(process.env.PORT||8080,async()=>{
     await connection;
     console.log("connected to db")
-    console.log(" server is runnig http://localhost:8000")
+    console.log(` server is runnig ${process.env.PORT}`)
 })
