@@ -30,7 +30,7 @@ const Post2 = () => {
 useEffect(()=>{
     const userId=localStorage.getItem("userid")
        axios
-       .get(`https://protected-island-08310.herokuapp.com/profile/${userId}/feed`)
+       .get(`https://insta-server.onrender.com/profile/${userId}/feed`)
        .then(({data})=>{
           setFeeds(data)
           console.log(data)
@@ -59,7 +59,7 @@ useEffect(()=>{
          <Box>
            <Image
              w={"40rem"}
-             src={`https://protected-island-08310.herokuapp.com/static/${f.image}`}
+             src={`https://insta-server.onrender.com/static/${f.image}`}
            />
          </Box>
          <Flex justifyContent={"space-between"} p={4}>

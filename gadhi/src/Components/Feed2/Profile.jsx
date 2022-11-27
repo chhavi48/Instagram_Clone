@@ -28,7 +28,7 @@ const Profile = () => {
 useEffect(()=>{
     const userId=localStorage.getItem("userid")
        axios
-       .get(`https://protected-island-08310.herokuapp.com/profile/${userId}/feed`)
+       .get(`https://insta-server.onrender.com/profile/${userId}/feed`)
        .then(({data})=>{
           setFeeds(data)
           console.log(data)
@@ -172,7 +172,7 @@ useEffect(()=>{
            <Image
              w={"250px"}
              h={"250px"}
-             src={`https://protected-island-08310.herokuapp.com/static/${f.image}`}
+             src={`https://insta-server.onrender.com/static/${f.image}`}
            />
          </Box>
          

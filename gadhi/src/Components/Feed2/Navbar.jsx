@@ -67,7 +67,7 @@ const nav=useNavigate()
           formdata.append("image",inputfile.current.files[0]);
            const userId=localStorage.getItem("userid")
         
-          axios.post(`https://protected-island-08310.herokuapp.com/profile/${userId}/feed`,formdata,{
+          axios.post(`https://insta-server.onrender.com/profile/${userId}/feed`,formdata,{
             headers:{"Content-Type":"multipart/form-data"},
             
           })

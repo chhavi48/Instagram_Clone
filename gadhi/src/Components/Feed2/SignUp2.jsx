@@ -41,7 +41,7 @@ export default function SignUp2() {
       username,
       password,
     };
-    await fetch("https://protected-island-08310.herokuapp.com/auth/signup", {
+    await fetch("https://insta-server.onrender.com/auth/signup", {
       method: "POST",
       body: JSON.stringify(payload),
       headers: {

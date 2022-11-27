@@ -40,7 +40,7 @@ const Login = () => {
       try{
         e.preventDefault();
         // console.log(formData)
-        const {data}= await axios.post("https://protected-island-08310.herokuapp.com/auth/login",formData)
+        const {data}= await axios.post("https://insta-server.onrender.com/auth/login",formData)
         const user=data[0]
         localStorage.setItem("userid",user["_id"])
         // console.log(data[0]);

@@ -1,23 +1,6 @@
-import {
-  Flex,
-  Box,
-  FormControl,
-  FormLabel,
-  Input,
-  InputGroup,
-  HStack,
-  InputRightElement,
-  Stack,
-  Button,
-  Heading,
-  Text,
-  useColorModeValue,
-  Link,
-  Image,
-} from "@chakra-ui/react";
+
 import React, { useEffect, useState } from "react";
-import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
-import { RiFacebookBoxFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 export default function SignUp2() {
   const [username, setUser] = useState("");

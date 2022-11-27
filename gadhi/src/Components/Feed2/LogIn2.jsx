@@ -38,7 +38,7 @@ export default function LogIn2() {
       e.preventDefault();
       // console.log(formData)
       const { data } = await axios.post(
-        "https://protected-island-08310.herokuapp.com/auth/login",
+        "https://insta-server.onrender.com/auth/login",
         formData
       );
       const user = data[0];
