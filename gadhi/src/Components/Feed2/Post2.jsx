@@ -12,7 +12,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import SendIcon from "@mui/icons-material/Send";
 import { BsThreeDots, BsBookmark } from "react-icons/bs";
-import { LinkedCamera } from "@mui/icons-material";
+
 import axios from 'axios'
 const Post2 = () => {
     const [like,setLike] = useState(false);

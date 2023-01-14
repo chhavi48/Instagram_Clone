@@ -16,7 +16,7 @@ app.use("/auth",authRouter)
 app.use("/profile",userRouter)
 
 
-// const PORT=process.env.PORT || 8000
+
 
 app.listen(process.env.PORT||8080,async()=>{
     await connection;

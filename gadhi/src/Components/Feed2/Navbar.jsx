@@ -57,9 +57,6 @@ const nav=useNavigate()
       
         const handleSubmit=(e)=>{
           e.preventDefault();
-         
-      
-      
           const formdata=new FormData();
           formdata.append("title",data.title)
           formdata.append("description",data.description)
